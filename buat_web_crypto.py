@@ -77,7 +77,7 @@ def build_standalone_web():
                     <h3>🚀 Mau Mulai Trading & Dapat Bonus?</h3>
                     <p>Daftar di bursa terpercaya melalui link di bawah ini untuk mendapatkan bonus pendaftaran!</p>
                     
-                    <a href="https://indodax.com/ref/goanonim17" class="btn-cuan">Daftar Indodax (IDR)</a>
+                    <a href="https://indodax.onelink.me/qyYY/referral?deep_link_value=page:register,id:Rieki11" class="btn-cuan">Daftar Indodax (IDR)</a>
                     <a href="https://www.binance.com/id/register?ref=GOLIBRI" class="btn-cuan">Daftar Binance (Global)</a>
                 </div>
 
