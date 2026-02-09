@@ -4,30 +4,30 @@
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>BRI Crypto Live - Data Akurat</title>
+            <title>BRI Crypto Monitor - Cuan Tiap Hari</title>
             <style>
-                body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background: #0f172a; color: #f8fafc; }
+                body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #0f172a; color: #f8fafc; }
                 .header { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); padding: 30px; text-align: center; border-bottom: 2px solid #38bdf8; }
-                h1 { margin: 0; color: #38bdf8; font-size: 24px; }
                 .container { max-width: 900px; margin: 20px auto; padding: 10px; }
                 .card { background: #1e293b; border-radius: 12px; padding: 15px; margin-bottom: 10px; display: flex; align-items: center; justify-content: space-between; border: 1px solid #334155; }
                 .coin-info { display: flex; align-items: center; }
                 .coin-info img { width: 35px; height: 35px; margin-right: 15px; }
-                .coin-name { font-weight: bold; font-size: 16px; }
-                .coin-symbol { color: #94a3b8; font-size: 12px; text-transform: uppercase; }
-                .price-box { text-align: right; }
-                .price-usd { font-size: 14px; color: #38bdf8; }
                 .price-idr { font-size: 16px; font-weight: bold; color: #f1f5f9; display: block; }
-                .change { font-size: 12px; margin-top: 4px; border-radius: 4px; padding: 2px 6px; display: inline-block; }
+                .change { font-size: 12px; padding: 2px 6px; border-radius: 4px; }
                 .up { background: #064e3b; color: #34d399; }
                 .down { background: #450a0a; color: #fb7185; }
+                
+                /* STYLE TOMBOL AFFILIATE */
+                .affiliate-section { margin-top: 30px; padding: 20px; background: #1e293b; border-radius: 15px; border: 1px dashed #38bdf8; text-align: center; }
+                .btn-cuan { display: inline-block; background: #38bdf8; color: #0f172a; padding: 15px 25px; border-radius: 10px; font-weight: bold; text-decoration: none; margin: 10px; transition: 0.3s; }
+                .btn-cuan:hover { background: #7dd3fc; transform: scale(1.05); }
                 .footer { text-align: center; padding: 20px; font-size: 11px; color: #64748b; }
             </style>
         </head>
         <body>
             <div class="header">
                 <h1>💰 BRI Crypto Monitor</h1>
-                <p style="font-size: 12px; color: #94a3b8;">Harga Real-Time & Akurat (USD & IDR)</p>
+                <p>Pantau Harga & Mulai Investasi Sekarang</p>
             </div>
             <div class="container">
         
@@ -36,13 +36,12 @@
                         <img src="https://cdn.coinranking.com/bOabBYkcX/bitcoin_btc.svg" alt="Bitcoin">
                         <div>
                             <div class="coin-name">Bitcoin</div>
-                            <div class="coin-symbol">BTC</div>
+                            <small style="color:#94a3b8">BTC</small>
                         </div>
                     </div>
-                    <div class="price-box">
-                        <span class="price-idr">Rp 1,115,933,137</span>
-                        <span class="price-usd">$70,628.68</span>
-                        <div class="change down">▼ 0.8%</div>
+                    <div class="price-box" style="text-align:right">
+                        <span class="price-idr">Rp 1,116,207,011</span>
+                        <div class="change down">-0.77%</div>
                     </div>
                 </div>
             
@@ -51,13 +50,12 @@
                         <img src="https://cdn.coinranking.com/rk4RKHOuW/eth.svg" alt="Ethereum">
                         <div>
                             <div class="coin-name">Ethereum</div>
-                            <div class="coin-symbol">ETH</div>
+                            <small style="color:#94a3b8">ETH</small>
                         </div>
                     </div>
-                    <div class="price-box">
-                        <span class="price-idr">Rp 33,583,390</span>
-                        <span class="price-usd">$2,125.53</span>
-                        <div class="change up">▲ 0.59%</div>
+                    <div class="price-box" style="text-align:right">
+                        <span class="price-idr">Rp 33,597,542</span>
+                        <div class="change up">0.62%</div>
                     </div>
                 </div>
             
@@ -66,13 +64,12 @@
                         <img src="https://cdn.coinranking.com/iqfxcAEV1/tether-usd-usdt.svg" alt="Tether USD">
                         <div>
                             <div class="coin-name">Tether USD</div>
-                            <div class="coin-symbol">USDT</div>
+                            <small style="color:#94a3b8">USDT</small>
                         </div>
                     </div>
-                    <div class="price-box">
-                        <span class="price-idr">Rp 15,795</span>
-                        <span class="price-usd">$1.00</span>
-                        <div class="change down">▼ 0.05%</div>
+                    <div class="price-box" style="text-align:right">
+                        <span class="price-idr">Rp 15,794</span>
+                        <div class="change down">-0.04%</div>
                     </div>
                 </div>
             
@@ -81,13 +78,12 @@
                         <img src="https://cdn.coinranking.com/B1oPuTyfX/xrp.svg" alt="XRP">
                         <div>
                             <div class="coin-name">XRP</div>
-                            <div class="coin-symbol">XRP</div>
+                            <small style="color:#94a3b8">XRP</small>
                         </div>
                     </div>
-                    <div class="price-box">
-                        <span class="price-idr">Rp 22,858</span>
-                        <span class="price-usd">$1.45</span>
-                        <div class="change up">▲ 0.01%</div>
+                    <div class="price-box" style="text-align:right">
+                        <span class="price-idr">Rp 22,848</span>
+                        <div class="change up">0.09%</div>
                     </div>
                 </div>
             
@@ -96,13 +92,12 @@
                         <img src="https://cdn.coinranking.com/a3k98K77d/1839.png" alt="BNB">
                         <div>
                             <div class="coin-name">BNB</div>
-                            <div class="coin-symbol">BNB</div>
+                            <small style="color:#94a3b8">BNB</small>
                         </div>
                     </div>
-                    <div class="price-box">
-                        <span class="price-idr">Rp 10,115,229</span>
-                        <span class="price-usd">$640.20</span>
-                        <div class="change down">▼ 1.06%</div>
+                    <div class="price-box" style="text-align:right">
+                        <span class="price-idr">Rp 10,116,469</span>
+                        <div class="change down">-1.04%</div>
                     </div>
                 </div>
             
@@ -111,13 +106,12 @@
                         <img src="https://cdn.coinranking.com/jkDf8sQbY/usdc.svg" alt="USDC">
                         <div>
                             <div class="coin-name">USDC</div>
-                            <div class="coin-symbol">USDC</div>
+                            <small style="color:#94a3b8">USDC</small>
                         </div>
                     </div>
-                    <div class="price-box">
-                        <span class="price-idr">Rp 15,806</span>
-                        <span class="price-usd">$1.00</span>
-                        <div class="change down">▼ 0.01%</div>
+                    <div class="price-box" style="text-align:right">
+                        <span class="price-idr">Rp 15,805</span>
+                        <div class="change down">-0.03%</div>
                     </div>
                 </div>
             
@@ -126,13 +120,12 @@
                         <img src="https://cdn.coinranking.com/iImvX5-OG/5426.png" alt="Solana">
                         <div>
                             <div class="coin-name">Solana</div>
-                            <div class="coin-symbol">SOL</div>
+                            <small style="color:#94a3b8">SOL</small>
                         </div>
                     </div>
-                    <div class="price-box">
-                        <span class="price-idr">Rp 1,382,091</span>
-                        <span class="price-usd">$87.47</span>
-                        <div class="change down">▼ 0.68%</div>
+                    <div class="price-box" style="text-align:right">
+                        <span class="price-idr">Rp 1,382,940</span>
+                        <div class="change down">-0.6%</div>
                     </div>
                 </div>
             
@@ -141,13 +134,12 @@
                         <img src="https://cdn.coinranking.com/gpbIR2aMf/1958.png" alt="TRON">
                         <div>
                             <div class="coin-name">TRON</div>
-                            <div class="coin-symbol">TRX</div>
+                            <small style="color:#94a3b8">TRX</small>
                         </div>
                     </div>
-                    <div class="price-box">
+                    <div class="price-box" style="text-align:right">
                         <span class="price-idr">Rp 4,404</span>
-                        <span class="price-usd">$0.28</span>
-                        <div class="change down">▼ 0.15%</div>
+                        <div class="change down">-0.18%</div>
                     </div>
                 </div>
             
@@ -156,13 +148,12 @@
                         <img src="https://cdn.coinranking.com/y5o-eHss1/74.png" alt="Dogecoin">
                         <div>
                             <div class="coin-name">Dogecoin</div>
-                            <div class="coin-symbol">DOGE</div>
+                            <small style="color:#94a3b8">DOGE</small>
                         </div>
                     </div>
-                    <div class="price-box">
+                    <div class="price-box" style="text-align:right">
                         <span class="price-idr">Rp 1,519</span>
-                        <span class="price-usd">$0.10</span>
-                        <div class="change down">▼ 1.32%</div>
+                        <div class="change down">-1.2%</div>
                     </div>
                 </div>
             
@@ -171,13 +162,12 @@
                         <img src="https://cdn.coinranking.com/By8ziihX7/bch.svg" alt="Bitcoin Cash">
                         <div>
                             <div class="coin-name">Bitcoin Cash</div>
-                            <div class="coin-symbol">BCH</div>
+                            <small style="color:#94a3b8">BCH</small>
                         </div>
                     </div>
-                    <div class="price-box">
-                        <span class="price-idr">Rp 8,426,666</span>
-                        <span class="price-usd">$533.33</span>
-                        <div class="change up">▲ 0.52%</div>
+                    <div class="price-box" style="text-align:right">
+                        <span class="price-idr">Rp 8,424,693</span>
+                        <div class="change up">0.57%</div>
                     </div>
                 </div>
             
@@ -186,13 +176,12 @@
                         <img src="https://cdn.coinranking.com/TewazIdz-/2010.png" alt="Cardano">
                         <div>
                             <div class="coin-name">Cardano</div>
-                            <div class="coin-symbol">ADA</div>
+                            <small style="color:#94a3b8">ADA</small>
                         </div>
                     </div>
-                    <div class="price-box">
+                    <div class="price-box" style="text-align:right">
                         <span class="price-idr">Rp 4,270</span>
-                        <span class="price-usd">$0.27</span>
-                        <div class="change down">▼ 1.24%</div>
+                        <div class="change down">-1.17%</div>
                     </div>
                 </div>
             
@@ -201,13 +190,12 @@
                         <img src="https://cdn.coinranking.com/sBC9moQNJ/33039.png" alt="USDS">
                         <div>
                             <div class="coin-name">USDS</div>
-                            <div class="coin-symbol">USDS</div>
+                            <small style="color:#94a3b8">USDS</small>
                         </div>
                     </div>
-                    <div class="price-box">
+                    <div class="price-box" style="text-align:right">
                         <span class="price-idr">Rp 15,906</span>
-                        <span class="price-usd">$1.01</span>
-                        <div class="change up">▲ 0.63%</div>
+                        <div class="change up">0.04%</div>
                     </div>
                 </div>
             
@@ -216,13 +204,12 @@
                         <img src="https://cdn.coinranking.com/0h9Yk9J4t/hyperliquid.png" alt="Hyperliquid">
                         <div>
                             <div class="coin-name">Hyperliquid</div>
-                            <div class="coin-symbol">HYPE</div>
+                            <small style="color:#94a3b8">HYPE</small>
                         </div>
                     </div>
-                    <div class="price-box">
-                        <span class="price-idr">Rp 500,913</span>
-                        <span class="price-usd">$31.70</span>
-                        <div class="change down">▼ 2.64%</div>
+                    <div class="price-box" style="text-align:right">
+                        <span class="price-idr">Rp 501,186</span>
+                        <div class="change down">-2.64%</div>
                     </div>
                 </div>
             
@@ -231,13 +218,12 @@
                         <img src="https://cdn.coinranking.com/DWwgJHgyl/3957.png" alt="LEO">
                         <div>
                             <div class="coin-name">LEO</div>
-                            <div class="coin-symbol">LEO</div>
+                            <small style="color:#94a3b8">LEO</small>
                         </div>
                     </div>
-                    <div class="price-box">
-                        <span class="price-idr">Rp 133,593</span>
-                        <span class="price-usd">$8.46</span>
-                        <div class="change up">▲ 1.72%</div>
+                    <div class="price-box" style="text-align:right">
+                        <span class="price-idr">Rp 133,592</span>
+                        <div class="change up">1.98%</div>
                     </div>
                 </div>
             
@@ -246,18 +232,25 @@
                         <img src="https://cdn.coinranking.com/yMV5hXDd6/29470.png" alt="Ethena USDe">
                         <div>
                             <div class="coin-name">Ethena USDe</div>
-                            <div class="coin-symbol">USDE</div>
+                            <small style="color:#94a3b8">USDE</small>
                         </div>
                     </div>
-                    <div class="price-box">
-                        <span class="price-idr">Rp 15,792</span>
-                        <span class="price-usd">$1.00</span>
-                        <div class="change up">▲ 0.05%</div>
+                    <div class="price-box" style="text-align:right">
+                        <span class="price-idr">Rp 15,791</span>
+                        <div class="change up">0.04%</div>
                     </div>
                 </div>
             
+                <div class="affiliate-section">
+                    <h3>🚀 Mau Mulai Trading & Dapat Bonus?</h3>
+                    <p>Daftar di bursa terpercaya melalui link di bawah ini untuk mendapatkan bonus pendaftaran!</p>
+                    
+                    <a href="https://indodax.com/ref/goanonim17" class="btn-cuan">Daftar Indodax (IDR)</a>
+                    <a href="https://www.binance.com/id/register?ref=GOLIBRI" class="btn-cuan">Daftar Binance (Global)</a>
+                </div>
+
                 <div class="footer">
-                    Pembaruan Otomatis via Termux Engine | BRI Project 2026
+                    Website ini dibuat secara otomatis melalui Termux oleh BRI | 2026
                 </div>
             </div>
         </body>
